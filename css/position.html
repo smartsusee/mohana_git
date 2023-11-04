@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        box-sizing: border-box;
+      }
+
+      #position-fixed {
+        width: 100%;
+        position: fixed;
+        background-color: black;
+        height: 40px;
+      }
+      ul li {
+        color: aliceblue;
+      }
+      ul {
+        /* background-color: aqua; */
+        display: flex;
+        width: 400px;
+        height: 40px;
+        align-items: center;
+        margin-left: 300px;
+        justify-content: space-around;
+      }
+
+      #container_1 {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background-color: violet;
+        margin-top: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="position-fixed">
+      <ul id="ul">
+        <li>home</li>
+        <li>product</li>
+        <li>help</li>
+      </ul>
+    </div>
+
+    <h1 style="position: absolute; margin-top: 200px">Position</h1>
+    <div id="container_1"></div>
+    <div id="container_2"></div>
+  </body>
+</html>

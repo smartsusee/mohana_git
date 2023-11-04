@@ -1,0 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  border: 1px solid black;
+  width: 32px;
+  padding: 20px;
+}
+/* tob , left ,bottom , right  */

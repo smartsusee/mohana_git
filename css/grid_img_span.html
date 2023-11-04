@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      #grid-img {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 2px;
+      }
+      #img_1 {
+        grid-column: span 2;
+      }
+      #img-5 {
+        grid-row: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Grid image span</h1>
+    </center>
+    <div id="grid-img">
+      <img id="img_1" src="./images/dog_1.jpg" alt="" />
+      <img src="./images/dog_2.jpg" alt="" />
+      <img src="./images/dog_3.jpg" alt="" />
+      <img src="./images/dog_4.jpg" alt="" />
+      <img id="img-5" src="./images/dog_5.jpg" alt="" />
+      <img src="./images/dog_6.jpg" alt="" />
+      <img src="./images/dog_7.jpg" alt="" />
+      <img src="./images/dog_1.jpg" alt="" />
+      <img src="./images/dog_2.jpg" alt="" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAMAAACcwCSMAAAAb1BMVEX/AAD/////ior/zc3/8PD/1dX/UFD/s7P/+fn/5ub/7e3/c3P/0tL/GRn/m5v/CQn/Li7/eXn/r6//4eH/2tr/WFj/Zmb/fX3/xsb/q6v/ISH/pKT/OTn/KSn/kpL/vr7/QED/Skr/X1//bW3/hIRJnO7cAAADXElEQVRoge3a63KqMBAA4A0GiCjIVbkJ3t7/GU8CWq1i200imTOT7b9O9bMCyW52gRgMsLjFLW5xi1vc4hb/PM4oDZY8sizL3TWPxVPwX7lunmXij4KAUiaPMxoE2aL0I2eXnE9FUXiHNq7rMNzALxGGYb2P24NXFKftanfpmr50lwFlk5/mCWdZ313OXv0bgozNoUicakF/wGnjaUafI1yl03iw+7B8jY694r7ur/ptxP0z3s1Fi4i+45c5bYDLIx7Na9/+9wF357YB3C/8MD/e3nB/fhvAH3H26aVlMjw24LkJGyAf8Nlv9TGiAS/M4IXAaWsGbynH81836Q9FzvHSkA09xytTeMPxmbbx1zhz3MgSI+LI8dgUvud4aAoPGVBj+GYJ6JXd03adXFhjX9Jp2wwWgF5jHEKWiRa8B3Qm4YgcZHHUgPuSOCGp+o2aAnp1dW4pv3KqHwH6Lb5wEmzVcAfQ5cIdV730CaBv3EecsFShxFvxHxWc19Xyu+IZ0NftCefZr2wSWAD6qr3ghJRyaeAB0K+bwAlpZJ76GNDbxCROAokiew/ou3Ua56UuOiWqAf19vcMJ6ZHvtQF01v4ex1ZemnHcUy9RrfyIKzz1OnDUbqP3a2eYq675mvuo+32j81FbI1fLUN8is0Tvj7Wu5ZVF+NU91rSx9DL7WqtlS81OEjQvUwH9uhc8kC0hTsppFIukz3RWigmkbBIzRALo/O8Rz5Qy951K0cAUWwQdNNK48jFWI10olupnBLJVaq5Ypl1xmcMBqqcXVcoci/h7LTan0QdCJ22nhjkEpg6dYRMAM3kIaPb4U8e5klSIg1/0tqYrVhxHr6+6Qhz296Zw0eYw1NMTvVxzra1YtLZM9Tm8oaM468TCPZwBN9C6F7EeW9hGlpmWjs17I0+6mJoQONO0P2MipFfcRDtVTC1cR1VmHpMR6/odJ+d5bY884vO2c7fsO06q+dKp7mbeR9LwxxpycczJK84L7ejjy03tuA/g8xhi7ndJcfiA6m0vURl8194NYGaLMo0uu9X2VHjHNv7L8OVXhGF9m8FMdk7jjyOYE84fRk8ZG+ZOsyzPx6HTsux7P02rquFRVWnq+31ZjhOo1/nTv02f/gdDtxa3uMUtbnGLW9zib+IfCbU22NESdM8AAAAASUVORK5CYII="
+    />
+
+    <style>
+      /* border-width 
+        border-style 
+        border-color  */
+
+      table,
+      tr,
+      th,
+      td {
+        border: 3px solid black;
+        text-align: center;
+        border-collapse: collapse;
+      }
+
+      td {
+        color: rgb(4, 5, 5);
+      }
+      table {
+        width: 500px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- name    email     id   tr th 
+    xxx     xemail    01        tr  td 
+    yyy     yemail    02      tr td -->
+
+    <table>
+      <tr>
+        <th rowspan="4">name</th>
+        <th>email</th>
+        <th colspan="2">id</th>
+      </tr>
+      <tr>
+        <td>manoj@gmail.com</td>
+        <td>01</td>
+        <td>345678</td>
+      </tr>
+
+      <tr>
+        <td>sundhar@gmail.com</td>
+        <td>02</td>
+        <td>345678</td>
+      </tr>
+      <tr>
+        <td>sundhar@gmail.com</td>
+        <td>02</td>
+        <td>345678</td>
+      </tr>
+    </table>
+
+    <!-- forms  input -->
+
+    <!-- insta  -->
+
+    <!-- name: ________________
+
+    email:________________
+
+    pass: ________________ -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <form action="./div.html">
+      <label for="">Name:</label>
+      <input type="text" required />
+
+      <br />
+      <br />
+      <br />
+
+      <label for="">Email:</label>
+      <input type="email" required />
+      <br />
+      <br />
+
+      <label for="">Password:</label>
+      <input
+        type="password"
+        required
+        placeholder="please enter you'r password"
+        id="input"
+      />
+      <br />
+      <br />
+
+      <input type="radio" name="gender" />
+      <span>Male </span>
+
+      <input type="radio" name="gender" />
+      <span>Female </span>
+
+      <input type="radio" name="gender" />
+      <span>Transgender </span>
+
+      <input type="number" />
+      <button>Click me!</button>
+    </form>
+
+    <ol>
+      <li>home</li>
+      <li>product</li>
+    </ol>
+
+    <kbd>ctrl+l</kbd>
+
+    <details>
+      <summary>student info</summary>
+
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+    </details>
+  </body>
+</html>

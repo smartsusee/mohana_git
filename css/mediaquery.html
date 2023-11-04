@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+      }
+      #container_1 {
+        width: 100%;
+        height: 40px;
+        background-color: teal;
+      }
+      .fa-bars {
+        color: aliceblue;
+      }
+      ul {
+        width: 600px;
+        display: flex;
+        justify-content: space-around;
+      }
+      ul li {
+        color: aliceblue;
+      }
+      #data {
+        display: none;
+      }
+
+      /* max -> loptop to moblie 
+      min -> moblie to loptop  */
+      @media (max-width: 770px) {
+        #container_1 {
+          width: 20%;
+          height: 100px;
+          background-color: rgb(38, 0, 128);
+        }
+        ul {
+          width: 600px;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+        }
+        ul li {
+          line-height: 30px;
+        }
+        #data {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container_1">
+      <div id="data">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul id="dropdown">
+        <li>home</li>
+        <li>aboutus</li>
+        <li>help</li>
+      </ul>
+    </div>
+  </body>
+</html>

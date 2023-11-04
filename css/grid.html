@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #container_1 {
+        display: grid;
+        /* column -> width */
+        /* row -> height  */
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 30px;
+      }
+
+      #container_1 div {
+        border: 1px solid black;
+        padding: 5px;
+      }
+
+      @media (max-width: 766px) {
+        #container_1 {
+          display: grid;
+          /* column -> width */
+          /* row -> height  */
+
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(5, 1fr);
+          gap: 30px;
+        }
+        #container_1 div {
+          border: 1px solid black;
+          padding: 2px;
+          background-color: blueviolet;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container_1">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+        cupiditate vero excepturi officiis impedit, debitis architecto sed odit
+        laboriosam aliquid adipisci animi sapiente, quibusdam distinctio
+        delectus corporis natus dolores?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+        cupiditate vero excepturi officiis impedit, debitis architecto sed odit
+        laboriosam aliquid adipisci animi sapiente, quibusdam distinctio
+        delectus corporis natus dolores?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+        cupiditate vero excepturi officiis impedit, debitis architecto sed odit
+        laboriosam aliquid adipisci animi sapiente, quibusdam distinctio
+        delectus corporis natus dolores?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+        cupiditate vero excepturi officiis impedit, debitis architecto sed odit
+        laboriosam aliquid adipisci animi sapiente, quibusdam distinctio
+        delectus corporis natus dolores?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+        cupiditate vero excepturi officiis impedit, debitis architecto sed odit
+        laboriosam aliquid adipisci animi sapiente, quibusdam distinctio
+        delectus corporis natus dolores?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+        cupiditate vero excepturi officiis impedit, debitis architecto sed odit
+        laboriosam aliquid adipisci animi sapiente, quibusdam distinctio
+        delectus corporis natus dolores?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+        cupiditate vero excepturi officiis impedit, debitis architecto sed odit
+        laboriosam aliquid adipisci animi sapiente, quibusdam distinctio
+        delectus corporis natus dolores?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+        cupiditate vero excepturi officiis impedit, debitis architecto sed odit
+        laboriosam aliquid adipisci animi sapiente, quibusdam distinctio
+        delectus corporis natus dolores?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere
+        cupiditate vero excepturi officiis impedit, debitis architecto sed odit
+        laboriosam aliquid adipisci animi sapiente, quibusdam distinctio
+        delectus corporis natus dolores?
+      </div>
+    </div>
+  </body>
+</html>

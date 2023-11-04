@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+    #animation {
+      margin-left: 200px;
+      margin-top: 200px;
+      width: 100px;
+      height: 100px;
+      background-color: violet;
+
+      animation-name: animate;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes animate {
+      25% {
+        background-color: red;
+        transform: translate(200px);
+      }
+      50% {
+        background-color: blue;
+        transform: rotate(360deg);
+      }
+      75% {
+        background-color: yellowgreen;
+      }
+      100% {
+        background-color: tomato;
+      }
+    }
+
+    /* transform -> translate , scal ,skew , rotate  */
+  </style>
+  <body>
+    <h1>animation</h1>
+
+    <div id="animation"></div>
+  </body>
+</html>
