@@ -13,12 +13,14 @@
 
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        gap: 30px;
+        /* grid-auto-columns: minmax(500px, auto); */
+        gap: 1em;
       }
 
       #container_1 div {
-        border: 1px solid black;
+        border: 1px solid hsla(0, 0%, 0%, 0.194);
         padding: 5px;
+        background-color: hsla(0, 0%, 0%, 0.194);
       }
 
       @media (max-width: 766px) {
